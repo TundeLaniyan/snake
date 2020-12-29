@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <h1>Snake Score: <span class="points">0</span></h1>
+      <label for="level">Level</label>
+      <input
+        id="level"
+        type="number"
+        step="1"
+        min="1"
+        max="9"
+        value="1"
+        onchange="levelChange(this.value)"
+      />
+    </div>
+    <div class="game-board">
+      <!-- <div class="snake"></div> -->
+    </div>
+    <div class="controler">
+      <div
+        class="controller__direction controller__direction--up"
+        onclick="direction({keyCode: 38})"
+      ></div>
+      <div
+        class="controller__direction controller__direction--right"
+        onclick="direction({keyCode: 39})"
+      ></div>
+      <div
+        class="controller__direction controller__direction--down"
+        onclick="direction({keyCode: 40})"
+      ></div>
+      <div
+        class="controller__direction controller__direction--left"
+        onclick="direction({keyCode: 37})"
+      ></div>
+      <div class="controller__center" onclick="direction({keyCode: 32})"></div>
+    </div>
+    <button onclick="handleReset()">Reset</button>
+    <span>High score: <span class="high-score">0</span></span>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
