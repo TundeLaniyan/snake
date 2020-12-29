@@ -89,7 +89,7 @@ button {
   width: 10rem;
   height: 10rem;
   background-color: transparent;
-  bottom: 20%;
+  bottom: 10%;
   overflow: hidden;
 }
 @media (hover: none) {
@@ -112,7 +112,7 @@ button {
 }
 .controller__direction {
   position: absolute;
-  left: 15%;
+  left: 17%;
   border-left: 3.75rem solid transparent;
   border-right: 3.75rem solid transparent;
   border-bottom: 3.75rem solid rgba(128, 128, 128, 0.479);
@@ -122,17 +122,17 @@ button {
   z-index: 10;
 }
 .controller__direction--right {
-  left: 38.5%;
-  top: 24.5%;
+  left: 42.5%;
+  top: 26.5%;
   transform: rotate(-90deg);
 }
 .controller__direction--down {
-  top: 47%;
+  top: 51%;
   transform: rotate(0);
 }
 .controller__direction--left {
   left: -7.5%;
-  top: 24.5%;
+  top: 26.5%;
   transform: rotate(90deg);
 }
 .controller__direction:hover {
