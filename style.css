@@ -92,11 +92,6 @@ button {
   bottom: 10%;
   overflow: hidden;
 }
-@media (hover: none) {
-  .controler {
-    display: unset;
-  }
-}
 .controller__center {
   position: absolute;
   width: 7.5rem;
@@ -113,9 +108,9 @@ button {
 .controller__direction {
   position: absolute;
   left: 17%;
-  border-left: 3.75rem solid transparent;
-  border-right: 3.75rem solid transparent;
-  border-bottom: 3.75rem solid rgba(128, 128, 128, 0.479);
+  border-left: 6vh solid transparent;
+  border-right: 6vh solid transparent;
+  border-bottom: 6vh solid rgba(128, 128, 128, 0.479);
   border-radius: 50%;
   transform: rotate(180deg);
   cursor: pointer;
@@ -127,7 +122,7 @@ button {
   transform: rotate(-90deg);
 }
 .controller__direction--down {
-  top: 51%;
+  top: 53%;
   transform: rotate(0);
 }
 .controller__direction--left {
@@ -136,5 +131,23 @@ button {
   transform: rotate(90deg);
 }
 .controller__direction:hover {
-  border-bottom: 3.75rem solid rgba(128, 128, 128, 0.808);
+  border-bottom: 6vh solid rgba(128, 128, 128, 0.808);
+}
+
+@media (hover: none) {
+  .controler {
+    display: unset;
+    bottom: 1%;
+    right: 1%;
+  }
+  .top {
+    height: 10vh;
+  }
+  .game-board {
+    height: 67vh;
+  }
+  .reset {
+    position: absolute;
+    bottom: 5%;
+  }
 }
